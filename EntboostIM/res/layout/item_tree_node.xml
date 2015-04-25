@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/itemBG"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/item_tree_node_expandOrFoldIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ui66new"/>
+
+    <ImageView
+        android:id="@+id/item_tree_node_ico"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_tree_node_expandOrFoldIcon"
+        android:src="@drawable/group_head"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_tree_node_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_tree_node_ico"
+        android:textColor="#194e62"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/item_tree_node_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:focusable="false"
+        android:src="@drawable/ui62new" />
+
+    <ImageButton
+        android:id="@+id/item_tree_node_talk"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/item_tree_node_info"
+        android:background="@null"
+        android:focusable="false"
+        android:src="@drawable/ui63new" />
+
+</RelativeLayout>
